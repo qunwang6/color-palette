@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+    maximum-scale=1, minimum-scale=1, , user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Pick a color, and you get a color palette🌈."
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#23272e" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#23272e" />
+    <title>Color Palette</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <link
+      rel="apple-touch-icon"
+      href="./images/icons/icon-144x144.png"
+      sizes="144x144"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./images/icons/icon-512x512.png"
+      sizes="512x512"
+    />
+  </head>
+  <body>
+    <section class="page welcome-page">
+      <h1 class="welcome-page__heading">
+        <span class="rainbow-red">C</span><span class="rainbow-yellow">o</span
+        ><span class="rainbow__green">l</span
+        ><span class="rainbow__blue">o</span
+        ><span class="rainbow__purple">r</span> Palette
+      </h1>
+      <p class="welcome-page__description">
+        A simple design tool to generate colors
+      </p>
+      <div
+        class="welcome-page__image-container welcome-page__image-container--jump"
+      >
+        <img
+          class="welcome-page__image"
+          src="./images/icons/icon-512x512.svg"
+          alt="logo"
+        />
+      </div>
+      <div class="welcome-page__button welcome-page__start-button">
+        Get Started
+      </div>
+      <a
+        class="welcome-page__button welcome-page__github-button"
+        href="https://github.com/kelvinwongdev/color-palette"
+        target="_blank"
+        rel="noreferrer"
+        >Github Repo</a
+      >
+    </section>
+    <section class="page main-page">
+      <div class="color-palette"></div>
+      <div class="hex-color-input">
+        <div class="hex-color-input__text">
+          <label class="hex-color-input__text__mark" for="hex-color-input__text"
+            >#</label
+          >
+          <input
+            id="hex-color-input__text"
+            class="hex-color-input__text__word"
+            type="text"
+          />
+        </div>
+        <div class="hex-color-input__color-container">
+          <input class="hex-color-input__color" type="color" />
+        </div>
+        <svg
+          class="hex-color-input__random"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"
+          />
+          <path
+            d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"
+          />
+        </svg>
+      </div>
+    </section>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
